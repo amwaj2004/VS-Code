@@ -1,0 +1,212 @@
+
+/* Importing Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    /* Colors */
+    --muted-olive: #6b8e23;
+    --eggplant-purple: #614051;
+    --lavender: #E6E6FA;
+    --powder-blue: #B0E0E6;
+    --blush-pink: #FFB6C1;
+    --light-peach: #FFDAB9;
+    --dusty-rose: #DCAE96;
+    --sand-beige: #D8C3A5;
+    --light-taupe: #B8A99A;
+    --ash-gray: #B2BEB5;
+    --cloud-white: #F5F5F5;
+    --black-color: #00000000;
+    --bisque-color: #ffe4c4;
+
+    /* Font sizes */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* Font weights */
+    --font-weight-thin: 200;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border radius's */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50px;
+
+    /* Site max width*/
+    --site-max-width: 1120px
+}
+
+
+.navbar .header-logo{
+    width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+/*Style for entire site*/
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+.section-title{
+    display: flex;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+}
+
+/*navbar styling*/
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: var(--eggplant-purple);
+}
+
+/* spacing between and around words*/
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+
+}
+
+/* The Buttons */
+.navbar .nav-menu .nav-link{
+    padding: 10px 15px;
+    color: var(--cloud-white);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+
+}
+
+/* transition changes when hovered over*/
+.navbar .nav-menu .nav-link:hover{
+    color: var(--eggplant-purple);
+    background-color: var(--bisque-color);
+}
+
+
+/* Hero Section */
+
+.hero-section{
+    min-height: 100vh;
+    padding: 50px;
+    background: var(--eggplant-purple);
+    
+
+}
+
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--cloud-white);
+    justify-content: space-between;
+}
+
+/* Title */
+.hero-section .hero-details .title{
+    font-size: var(--font-size-xxl);
+    color: var(--bisque-color);
+    font-family: "Miniver", sans-serif;
+}
+
+/* Subtitle */
+.hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Description */
+.hero-section .hero-details .description{
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+}
+
+/* Buttons */
+.hero-section .hero-details .buttons{
+    display: flex;
+    /*gap: 23px    <-- if we add multiple buttons*/
+}
+
+.hero-section .hero-details .button{
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    background-color: var(--bisque-color);
+    color: var(--eggplant-purple);
+    border-radius: var(--border-radius-m);
+    font-weight: var(--font-weight-medium);
+    transition: 0.3s ease;
+}
+
+/* Transitions to this when hovered over*/
+.hero-section .hero-details .button:hover{
+    color: var(--cloud-white);
+    border-color: var(--cloud-white);
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+/* Image */
+.hero-section .hero-details .hero-image-wrapper{
+    max-width: 500px;
+    margin-right: 30px;
+}
+
+
+/* Recipes section styling */
+.recipes-section {
+    padding: 20px 30px 100px;
+    background-color: var(--dusty-rose);
+}
+
+.recipes-section .section-title{
+    color: var(--eggplant-purple);
+}
+
+.recipes-section .recipes-details .button-add-recipe{
+    padding: 50px 100px 50px;
+    border: 2px solid;
+    font-size: var(--font-size-xxl);
+    border-radius: var(--border-radius-m);
+    border-color: var(--eggplant-purple);
+}
